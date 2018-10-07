@@ -1,3 +1,4 @@
+---?image=images/androidNinja.png&size=auto 70%
 # Be a shadow ninja!
 
 ### Android elevation
@@ -20,7 +21,6 @@
 - Cienie, nie będące elevation (np. bitmapy) |
 ---
 ## Jak elevation jest rysowane?
-![magic1](/assets/wizardMagic1.jpg)
 - View.java |
 - RenderNode.java -> RenderNode.cpp |
 - FrameBuilder.cpp |
