@@ -9,7 +9,7 @@
 - Podstawą rysowania jest Outline widoku |
 - Domyślnie Outline pobierany jest z Background |
 
-+++?image=images/newsMain.jpg&size=auto 70%
++++?image=images/shadowZ.png&size=auto 70%
 ## Elevation to nie tylko cień
 ---
 ## Najczęstsze problemy
