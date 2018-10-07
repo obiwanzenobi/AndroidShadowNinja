@@ -22,6 +22,7 @@ class ElevationListFragment : Fragment() {
         return RecyclerView(requireContext()).apply {
             layoutParams = LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT)
             layoutManager = GridLayoutManager(requireContext(), args.columns)
+            recycledViewPool.setMaxRecycledViews(0, 13 * args.columns)
             adapter = object : Adapter<ViewHolder>() {
                 override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = object : ViewHolder(
                     LayoutInflater.from(parent.context).inflate(R.layout.item_elevation, parent, false)

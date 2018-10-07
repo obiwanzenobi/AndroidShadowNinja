@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.ViewGroup.LayoutParams
+import android.view.ViewGroup.LayoutParams.MATCH_PARENT
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -19,12 +20,14 @@ class ImageListFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return RecyclerView(requireContext()).apply {
-            layoutParams = LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT)
+            layoutParams = LayoutParams(MATCH_PARENT, MATCH_PARENT)
             layoutManager = GridLayoutManager(requireContext(), args.columns)
+            recycledViewPool.setMaxRecycledViews(0, 13 * args.columns)
             adapter = object : Adapter<ViewHolder>() {
                 override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = object : ViewHolder(
                     LayoutInflater.from(parent.context).inflate(R.layout.item_shadow_image, parent, false)
-                ) {}
+                ) {
+                }
 
                 override fun getItemCount() = 55529
 
@@ -32,5 +35,4 @@ class ImageListFragment : Fragment() {
             }
         }
     }
-
 }
