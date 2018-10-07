@@ -8,7 +8,7 @@
 - Rysuje sie poza granicami widoku i jest ograniczony przez ClipBounds |
 - Podstawą rysowania jest Outline widoku |
 - Domyślnie Outline pobierany jest z Background |
-
+![magic1](/images/shadowZ.png)
 +++?image=images/shadowZ.png&size=auto 70%
 ## Elevation to nie tylko cień
 ---
