@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ShadowNinja</string>
+    <string name="menu_oveview">Overview</string>
+    <string name="overview_elevation">Elevation</string>
+    <string name="elevation_with_changed_outline">Elevation with changed outline</string>
+    <string name="image_shadow">Image shadow</string>
+    <string name="menu_image_list">Image list</string>
+    <string name="menu_elevation_list">Elevation list</string>
+    <string name="menu_card_elevation_list">Card elevation list</string>
+    <string name="menu_elevation_outline">Elevation outline</string>
+    <string name="menu_elevation_bar_label">Elements elevation: %1$d dp</string>
+    <string name="menu_list_columns_label">List columns: %1$d</string>
+    <string name="elevation">Elevation</string>
+    <string name="test_button">Test button</string>
+    <string name="scale_x">Scale x</string>
+    <string name="scale_y">Scale y</string>
+    <string name="offset_x">Offset x</string>
+    <string name="offset_y">Offset Y</string>
+    <string name="circle_outline">Circle outline</string>
+</resources>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/item_background"
+        android:padding="18dp"
+        android:text="@string/test_button"
+        app:layout_constraintBottom_toTopOf="@id/offsetYLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:elevation="8dp"/>
+
+    <CheckBox
+        android:id="@+id/circleOutlineCheck"
+        android:layout_width="match_parent"
+        android:text="@string/circle_outline"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/offsetYLabel"/>
+
+    <TextView
+        android:id="@+id/offsetYLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/offset_y"
+        app:layout_constraintBottom_toTopOf="@id/offsetYSeekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <SeekBar
+        android:id="@+id/offsetYSeekBar"
+        style="@style/Widget.AppCompat.SeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="150"
+        android:progress="0"
+        app:layout_constraintBottom_toTopOf="@id/offsetXLabel"/>
+
+    <TextView
+        android:id="@+id/offsetXLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/offset_x"
+        app:layout_constraintBottom_toTopOf="@id/offsetXSeekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <SeekBar
+        android:id="@+id/offsetXSeekBar"
+        style="@style/Widget.AppCompat.SeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="150"
+        android:progress="0"
+        app:layout_constraintBottom_toTopOf="@id/scaleYLabel"/>
+
+    <TextView
+        android:id="@+id/scaleYLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scale_y"
+        app:layout_constraintBottom_toTopOf="@id/scaleYBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <SeekBar
+        android:id="@+id/scaleYBar"
+        style="@style/Widget.AppCompat.SeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="200"
+        android:progress="100"
+        app:layout_constraintBottom_toTopOf="@id/scaleXLabel"/>
+
+    <TextView
+        android:id="@+id/scaleXLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scale_x"
+        app:layout_constraintBottom_toTopOf="@id/scaleXBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <SeekBar
+        android:id="@+id/scaleXBar"
+        style="@style/Widget.AppCompat.SeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="200"
+        android:progress="100"
+        app:layout_constraintBottom_toTopOf="@id/elevationLabel"/>
+
+    <TextView
+        android:id="@+id/elevationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/elevation"
+        app:layout_constraintBottom_toTopOf="@id/elevationBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <SeekBar
+        android:id="@+id/elevationBar"
+        style="@style/Widget.AppCompat.SeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="80"
+        android:progress="8"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/nav_graph"
+            app:startDestination="@id/menuFragment">
+
+    <fragment android:id="@+id/menuFragment"
+              android:name="com.lightmobile.shadowninja.MenuFragment"
+              android:label="MenuFragment">
+        <action android:id="@+id/toImageList"
+                app:destination="@id/imageListFragment">
+            <argument android:name="columns"
+                      android:defaultValue="4"/>
+        </action>
+        <action android:id="@+id/toOverview"
+                app:destination="@id/overviewFragment"/>
+        <action android:id="@+id/toElevationList"
+                app:destination="@id/elevationListFragment">
+            <argument android:defaultValue="4"
+                      android:name="columns"/>
+            <argument android:defaultValue="10"
+                      android:name="elevation"/>
+        </action>
+        <action android:id="@+id/toCardElevationList"
+                app:destination="@id/cardElevationListFragment">
+            <argument android:defaultValue="4"
+                      android:name="columns"/>
+            <argument android:defaultValue="10"
+                      android:name="elevation"/>
+        </action>
+        <action android:id="@+id/toOutline"
+                app:destination="@id/outlineFragment"/>
+    </fragment>
+    <fragment android:id="@+id/imageListFragment"
+              android:name="com.lightmobile.shadowninja.ImageListFragment"
+              android:label="ImageListFragment">
+        <argument android:name="columns"
+                  app:argType="integer"
+                  android:defaultValue="4"/>
+    </fragment>
+    <fragment android:id="@+id/overviewFragment"
+              android:name="com.lightmobile.shadowninja.OverviewFragment"
+              android:label="OverviewFragment"/>
+    <fragment android:id="@+id/elevationListFragment"
+              android:name="com.lightmobile.shadowninja.ElevationListFragment"
+              android:label="ElevationListFragment">
+        <argument android:name="elevation"
+                  app:argType="integer"/>
+        <argument android:name="columns"
+                  app:argType="integer"
+                  android:defaultValue="4"/>
+    </fragment>
+    <fragment android:id="@+id/cardElevationListFragment"
+              android:name="com.lightmobile.shadowninja.CardElevationListFragment"
+              android:label="CardElevationListFragment">
+        <argument android:name="elevation"
+                  app:argType="integer"/>
+        <argument android:name="columns"
+                  app:argType="integer"
+                  android:defaultValue="4"/>
+    </fragment>
+    <fragment android:id="@+id/outlineFragment"
+              android:name="com.lightmobile.shadowninja.OutlineFragment"
+              android:label="OutlineFragment"/>
+</navigation>
