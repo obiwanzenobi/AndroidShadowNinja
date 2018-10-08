@@ -19,9 +19,10 @@
 - Widok jest niewidoczny lub widoczny częściowo |
 - Brak animacji cieni |
 - Cienie, nie będące elevation (np. bitmapy) |
----
+
++++?image=images/shadowsTranslation.png
+
 ## Jak elevation jest rysowane?
-![magic1](/assets/wizardMagic1.jpg)
 - View.java |
 - RenderNode.java -> RenderNode.cpp |
 - FrameBuilder.cpp |
