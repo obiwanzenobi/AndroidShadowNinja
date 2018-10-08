@@ -10,6 +10,9 @@
 - Podstawą rysowania jest Outline widoku |
 - Domyślnie Outline pobierany jest z Background |
 ---
+## Elevation to nie tylko cień
+![translation](/images/shadowZ.jpg)
+---
 ## Najczęstsze problemy
 - Brak cienia |
 - Cień nie jest rysowany w całości |
