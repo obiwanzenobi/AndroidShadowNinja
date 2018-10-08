@@ -1,3 +1,4 @@
+---?image=images/androidNinja.jpg
 # Be a shadow ninja!
 
 ### Android elevation
@@ -22,7 +23,7 @@
 - RenderNode.java -> RenderNode.cpp |
 - FrameBuilder.cpp |
 - TesselationCache.cpp |
-- ShadowTessellator.cpp -> Ambient/Spot.cpp |
+- ShadowTessellator.cpp -> Ambient/SpotShadow.cpp |
 
 ---
 ## Elevation, dropshadow czy image?
