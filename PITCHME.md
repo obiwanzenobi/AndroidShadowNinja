@@ -1,4 +1,4 @@
----?image=images/androidNinja.jpg
+---?image=images/androidNinja.png
 # Be a shadow ninja!
 
 ### Android elevation
@@ -11,7 +11,7 @@
 - Domyślnie Outline pobierany jest z Background |
 ---
 ## Elevation to nie tylko cień
-![translation](/images/shadowZ.jpg)
+![translation](/images/shadowZ.png)
 ---
 ## Najczęstsze problemy
 - Brak cienia |
