@@ -1,6 +1,6 @@
----?image=images/androidNinja.png
-# Be a shadow ninja!
 
+# Be a shadow ninja!
+![ninja](/images/androidNinja.png)
 ### Android elevation
 ---
 ## Elevation
