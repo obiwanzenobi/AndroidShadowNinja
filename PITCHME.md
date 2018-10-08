@@ -31,6 +31,15 @@
 
 ---
 ## Elevation, dropshadow czy image?
++++
+```
+adb shell dumpsys gfxinfo packageName
+
+./systrace.py -a packageName
+```
+@[1](Informacje GPU)
+@[3](Systrace dla danego pakietu)
+
 ---
 ### Questions?
 
