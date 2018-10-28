@@ -1,5 +1,6 @@
-# Be a shadow ninja!
 
+# Be a shadow ninja!
+![ninja](/images/androidNinja.png)
 ### Android elevation
 ---
 ## Elevation
@@ -8,6 +9,9 @@
 - Rysuje sie poza granicami widoku i jest ograniczony przez ClipBounds |
 - Podstawą rysowania jest Outline widoku |
 - Domyślnie Outline pobierany jest z Background |
++++
+## Elevation to nie tylko cień
+![translation](/images/shadowZ.png)
 ---
 ## Najczęstsze problemy
 - Brak cienia |
@@ -15,17 +19,27 @@
 - Widok jest niewidoczny lub widoczny częściowo |
 - Brak animacji cieni |
 - Cienie, nie będące elevation (np. bitmapy) |
----
+
++++?image=images/shadowsTranslation.png
+
 ## Jak elevation jest rysowane?
-![magic1](/assets/wizardMagic1.jpg)
 - View.java |
 - RenderNode.java -> RenderNode.cpp |
 - FrameBuilder.cpp |
 - TesselationCache.cpp |
-- ShadowTessellator.cpp -> Ambient/Spot.cpp |
+- ShadowTessellator.cpp -> Ambient/SpotShadow.cpp |
 
 ---
 ## Elevation, dropshadow czy image?
++++
+```
+adb shell dumpsys gfxinfo packageName
+
+./systrace.py -a packageName
+```
+@[1](Informacje GPU)
+@[3](Systrace dla danego pakietu)
+
 ---
 ### Questions?
 
