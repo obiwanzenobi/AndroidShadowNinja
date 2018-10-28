@@ -26,6 +26,7 @@ class MenuFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
+
         menuOverviewButton.setOnClickListener { findNavController().navigate(MenuFragmentDirections.toOverview()) }
         imageListButton.setOnClickListener {
             findNavController().navigate(

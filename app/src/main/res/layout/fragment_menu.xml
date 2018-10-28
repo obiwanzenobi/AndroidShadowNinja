@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
+              android:clipChildren="false"
               android:gravity="center"
               android:orientation="vertical">
 
@@ -42,9 +44,9 @@
 
     <TextView
         android:id="@+id/elevationLabel"
-        android:text="@string/menu_elevation_bar_label"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="@string/menu_elevation_bar_label"/>
 
     <SeekBar
         android:id="@+id/elevationBar"
@@ -56,10 +58,10 @@
 
     <TextView
         android:id="@+id/columnsLabel"
-        android:layout_marginTop="16dp"
-        android:text="@string/menu_list_columns_label"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/menu_list_columns_label"/>
 
     <SeekBar
         android:id="@+id/columnsBar"

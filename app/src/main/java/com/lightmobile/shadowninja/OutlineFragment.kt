@@ -25,7 +25,7 @@ class OutlineFragment : Fragment() {
         val cornerRadius = resources.getDimension(R.dimen.corner_radius)
         val outlineProvider = CustomOutlineProvider(cornerRadius, 1f, 1f, 0, 0)
         button.outlineProvider = outlineProvider
-
+        button.clipToOutline = true
         button.elevation = elevationBar.progress.toFloat()
         elevationBar.setListener { button.elevation = it.toFloat() }
         scaleXBar.setListener {

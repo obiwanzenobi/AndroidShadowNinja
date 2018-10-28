@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:background="@color/card"
+        android:background="@drawable/item_background"
         android:clickable="true"
         android:padding="18dp"
         android:stateListAnimator="@animator/button_state_list"

@@ -5,9 +5,9 @@
     android:id="@+id/root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
+    android:background="#f0f0f0"
     android:clipChildren="false"
-    android:orientation="vertical">
+    android:gravity="center">
 
     <FrameLayout
         android:id="@+id/insideFakeBounds"
@@ -24,8 +24,9 @@
         <View
             android:id="@+id/shadowCreator"
             android:layout_width="match_parent"
-            android:elevation="4dp"
             android:layout_height="match_parent"
-            android:background="@drawable/item_background"/>
+            android:translationX="50dp"
+            android:background="@drawable/item_background"
+            android:elevation="24dp"/>
     </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
